@@ -11,6 +11,7 @@ public class Descrizione {
 		g = g + "-" + o.toString(); 
 	}
 	
+	@Override
 	public String toString(){
 		String s = "Descrizione:" + g;
 		return s;
