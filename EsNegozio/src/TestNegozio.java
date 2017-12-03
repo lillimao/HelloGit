@@ -15,7 +15,7 @@ public class TestNegozio {
 		ordine1.aggiungiProdotto(wafer);
 		ordine1.aggiungiProdotto(zucchine);
 		
-		Descrizione d = new Descrizione();
+	
 		
 		System.out.println(ordine1.toString());
 
