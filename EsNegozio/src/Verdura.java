@@ -1,12 +1,11 @@
 
 public class Verdura extends Prodotto {
 	
-	int prezzoSpecifico;
 	int kg;
 	
-	public Verdura(int prezzoFisso, int prezzoSpecifico){
+	public Verdura(int prezzoFisso, int kg){
 		super(prezzoFisso);
-		this.prezzoSpecifico = prezzoSpecifico;
+		this.kg = kg;
 	}
 	
 	@Override

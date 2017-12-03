@@ -16,5 +16,14 @@ public class Ordine {
 		d.append(p);
 		
 	}
+	
+	public int getTotale(){
+		return totOrdine;
+	}
+	
+	public String toString(){
+		String s = "Ordine: " + d.toString() + "Totale: " + totOrdine;
+		return s;
+	}
 
 }

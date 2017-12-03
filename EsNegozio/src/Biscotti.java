@@ -1,13 +1,12 @@
 
 public class Biscotti extends Prodotto {
 	
-	int prezzoSpecifico;
 	boolean isConfezioneGrande;
 	
 	
-	public Biscotti(int prezzoFisso, int prezzoSpecifico){
+	public Biscotti(int prezzoFisso, boolean isConfezioneGrande){
 		super(prezzoFisso);
-		this.prezzoSpecifico = prezzoSpecifico;
+		this.isConfezioneGrande = isConfezioneGrande;
 	}
 	
 	@Override

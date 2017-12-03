@@ -3,10 +3,10 @@ public class TestNegozio {
 
 	public static void main(String[] args) {
 		
-		Biscotti oreo = new Biscotti(5, 7);
+		Biscotti oreo = new Biscotti(5, true);
 		Verdura zucchine = new Verdura(1, 2);
-		Prodotto wafer = new Biscotti(2, 3);
-		Prodotto finocchi = new Verdura(0, 1);
+		Prodotto wafer = new Biscotti(2, false);
+		Prodotto finocchi = new Verdura(1, 3);
 		
 		Ordine ordine1 = new Ordine();
 		
@@ -17,7 +17,7 @@ public class TestNegozio {
 		
 		Descrizione d = new Descrizione();
 		
-		d.toString();
+		System.out.println(ordine1.toString());
 
 	}
 
