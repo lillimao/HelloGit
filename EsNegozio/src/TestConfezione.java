@@ -6,7 +6,7 @@ public class TestConfezione extends TestCase {
 			Confezione c = new Confezione(v);
 			Object o = c.scarta();
 			assertTrue(o instanceof Prodotto);
-			assertTrue(o instanceof Verdura);
+			assertFalse(o instanceof Verdura);
 			
 		}
 
