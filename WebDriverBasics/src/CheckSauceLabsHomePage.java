@@ -2,17 +2,16 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+
 
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import org.junit.Test;
 
 public class CheckSauceLabsHomePage {
 
@@ -24,9 +23,9 @@ WebDriver browser;
 
 //Firefox's geckodriver requires you to specify its location.    
 
-System.setProperty("webdriver.gecko.driver","E:\\geckodriver-v0.19.1-win64\\geckodriver.exe");   
+System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");   
 
-browser = new FirefoxDriver();    browser.get("http://saucelabs.com");   
+browser = new ChromeDriver();    browser.get("http://saucelabs.com");   
 
 WebElement header = browser.findElement(By.id("site-header"));   
 
