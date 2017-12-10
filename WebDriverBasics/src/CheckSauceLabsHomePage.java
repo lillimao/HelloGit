@@ -1,5 +1,8 @@
 import static org.junit.Assert.*;
 
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 import org.junit.Test;
 
 
@@ -17,7 +20,7 @@ public class CheckSauceLabsHomePage {
 
 @Test
 
-public void site_header_is_on_home_page() {   
+public void site_header_is_on_home_page() throws ClassNotFoundException, SQLException {   
 
 WebDriver browser;   
 
@@ -32,6 +35,8 @@ WebElement header = browser.findElement(By.id("site-header"));
 assertTrue((header.isDisplayed()));   
 
 browser.close();
+
+
 
 }
 
