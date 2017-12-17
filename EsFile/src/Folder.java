@@ -25,9 +25,12 @@ public class Folder extends File {
 	
 	public int getSize() {
 		int sizeFolder = 0;
-		for(int i = 0; i < 10; i++) {
-			sizeFolder = sizeFolder + arrayFile[i].getSize(); 
-		} return sizeFolder;
+		/*for(int k = 0; k < arrayFile.length; k++) {
+			sizeFolder = sizeFolder + arrayFile[k].getSize(); 
+		}*/
+		sizeFolder = arrayFile[0].getSize() + arrayFile[1].getSize();
+		
+		return sizeFolder;
 	}
 
 }

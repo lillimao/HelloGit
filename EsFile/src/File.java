@@ -10,7 +10,7 @@ public class File {
 	public int getSize() {
 		
 		int size = 0;
-		for(int i = 0; i < 8; i++) {
+		for(int i = 0; i < arrayB.length; i++) {
 			size = size + arrayB[i]; 
 		} return size;
 	}
